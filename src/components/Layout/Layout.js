@@ -1,11 +1,12 @@
 import Nav from "../Nav/Nav";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
+import "./Layout.css";
 
 export default function Layout(props) {
   return(
     <div className="Layout">
     <header>
-      <img src={logo} alt="logo" />
+      <img className="logo" src={logo} alt="logo" />
       <Nav />
     </header>
     <aside>
