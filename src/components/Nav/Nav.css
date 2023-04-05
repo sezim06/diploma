@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+.Nav .NavItem a {
+  color: darkgreen;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+.Nav ul li{
+  list-style-type: none;
+  
+}
+.Nav ul {
+  display: flex;
+  margin: 50px;
+}
