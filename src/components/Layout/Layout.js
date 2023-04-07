@@ -1,16 +1,17 @@
 import Nav from "../Nav/Nav";
-import logo from "../../assets/logo.png";
 import "./Layout.css";
+import Logo from "../logo/Logo";
+import CategoryList from "../CategoryList/CategoryList";
 
 export default function Layout(props) {
   return(
     <div className="Layout">
     <header>
-      <img className="logo" src={logo} alt="logo" />
+      <Logo/>
       <Nav />
     </header>
     <aside>
-      <nav>NAV COTEGORIES</nav>
+     <CategoryList/>  
     </aside>
     <main>{props.children}</main>
     <footer>
