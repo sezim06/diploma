@@ -8,7 +8,7 @@ export default function Nav(){
           <NavLink to="/">Home</NavLink>
         </li>
         <li className="NavItem">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/books">Books</NavLink>
         </li>
         <li className="NavItem">
           <NavLink to="/contact">Contact</NavLink>
