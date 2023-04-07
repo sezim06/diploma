@@ -1,17 +1,27 @@
 * {
   box-sizing: border-box;
 }
+
 .Nav .NavItem a {
-  color: darkgreen;
+  color: rgb(169, 14, 89);
   text-decoration: none;
   font-size: 20px;
   margin: 0 15px;
 }
-.Nav ul li{
-  list-style-type: none;
-  
+
+.Nav .NavItem:hover {
+  background-color: rgb(226, 161, 197);
+  border-radius: 165px;
 }
+
+.Nav .NavItem:active {
+  background-color: rgb(234, 117, 166)
+}
+.Nav ul li {
+  list-style-type: none;
+
+}
+
 .Nav ul {
   display: flex;
-  margin: 50px;
 }
