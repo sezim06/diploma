@@ -15,10 +15,14 @@
 }
 .Layout main{
   grid-area: main;
+  padding: 30px 50px;
 }
 .Layout footer{
   grid-area: footer;
 }
 .Layout .logo{
-  max-width: 50px; 
+  max-width: 60px;
+  margin-bottom: -62px;
+  margin-right: 10px;
+   
 }
