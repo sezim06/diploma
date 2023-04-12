@@ -1,26 +1,20 @@
-import { useMatch } from "react-router";
+import { useMatch } from "react-router-dom";
 import NotFound from "./NotFound";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
-export default function Category(){
-  const {params} = useMatch("/categories/:slug");
-  
-  const categories = [
-    {id: 1, name: "Fantasy", slug: "fantasy" },
-    {id: 2, name: "Chick lit", slug: "chick-lit" },
-    {id: 3, name: "Romance",slug: "romance" },
-    {id: 4, name: "Classic novel",slug: "classic-novel" },
+export default function Category() {
+  const { params } = useMatch("/categories/:slug");
 
-  ];
-  const category  = categories.find(
-    (category) => category.slug === params.slug
-  );
+  const {categories} = useContext(AppContext);
+
+  const category = categories.find((category) => category.slug === params.slug);
   if (!category) {
-    return<NotFound/>
+    return <NotFound />;
   }
-  return(
+  return (
     <div>
       <h1>{category.name}</h1>
-      
     </div>
-  )
+  );
 }
