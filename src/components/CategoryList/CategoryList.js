@@ -1,28 +1,39 @@
+import { getDocs } from "firebase/firestore/lite";
 import { NavLink } from "react-router-dom";
+import { categories } from "../../firebase";
+import { useEffect, useState } from "react";
 import "./CategoryList.css"
-export default function CategoryList(){
-  const categories = [
-    {id: 1, name: "Fantasy", slug: "fantasy" },
-    {id: 2, name: "Chick lit", slug: "chick-lit" },
-    {id: 3, name: "Romance",slug: "romance" },
-    {id: 4, name: "Classic novel",slug: "classic-novel" },
 
-  ];
-  const output = categories.map((category) => (
+export default function CategoryList() {
+  const [categoryList, setCategoryList] = useState([]);
+
+  // получить документы из списка категорий в Firebase.
+  useEffect(() => {
+    getDocs(categories).then(snapshot => {
+      const newCategoryList = [];
+      snapshot.docs.forEach(doc => {
+        const category = doc.data(); // { name: "...", slug: "..." }
+        category.id = doc.id;
+  
+        newCategoryList.push(category);
+      })
+  
+      setCategoryList(newCategoryList);
+    });
+  }, []);
+
+  const output = categoryList.map(category => (
     <li key={category.id}>
-      <NavLink to={"/categories/" + category.slug}>
+      <NavLink to={`/categories/${category.slug}`}>
         {category.name}
       </NavLink>
     </li>
-  ));
-    
+  )); 
 
-
-
-  return(
+  return (
     <div className="CategoryList">
-      <h3>Categories</h3>
+      <h3><span>C</span>ategories</h3>
       <ul>{output}</ul>
     </div>
-  )
+  );
 }
