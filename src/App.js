@@ -22,8 +22,8 @@ function App() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    return getDocs(categoryCollection)
-    .then((docs) => {
+    getDocs(categoryCollection)
+    .then(({docs}) => {
       setCategories(
         docs.map(doc => ({
           ...doc.data(),
@@ -36,7 +36,8 @@ function App() {
 
   return (
     <div className="App">
-      <Layout>
+      <AppContext.Provider value={{ categories }} >
+        <Layout>
         <Routes>
           <Route path="/" element={<Home/>} />  
           <Route path="/books" element={<Books />} /> 
@@ -48,7 +49,13 @@ function App() {
 
 
         </Routes>
-       </Layout>
+
+        </Layout>
+      
+
+      </AppContext.Provider>
+
+       
     </div>
   );
 }   
