@@ -6,12 +6,12 @@ import { getFirestore, collection } from 'firebase/firestore/lite'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCshDC5t94ck26dbLozrsphISXXKujRxVo",
-  authDomain: "diplom-b2b4b.firebaseapp.com",
-  projectId: "diplom-b2b4b",
-  storageBucket: "diplom-b2b4b.appspot.com",
-  messagingSenderId: "65197132264",
-  appId: "1:65197132264:web:94ebb98415dca05ea07c5d"
+  apiKey: "AIzaSyBUNIwnKsJg7Zxi9icQub9IANKBGROoR-E",
+  authDomain: "diplom-20d20.firebaseapp.com",
+  projectId: "diplom-20d20",
+  storageBucket: "diplom-20d20.appspot.com",
+  messagingSenderId: "1036837876073",
+  appId: "1:1036837876073:web:7060bead9d05f2aae4cdf8"
 };
 
 // Инициализация приложения
@@ -20,4 +20,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Получение списка категорий (коллекции документов)
-export const categories = collection(db, 'categories');
+export const categoryCollection = collection(db, 'categories');

@@ -7,9 +7,33 @@ import Contact from "./pages/Contact";
 import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
+import { createContext } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import { getDocs } from "firebase/firestore/lite";
+import { categoryCollection } from "./firebase";
+
+export const AppContext = createContext({
+  categories: [],
+});
 
 
 function App() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    return getDocs(categoryCollection)
+    .then((docs) => {
+      setCategories(
+        docs.map(doc => ({
+          ...doc.data(),
+          id:doc.id
+        }))
+      )
+    });
+  }, []);
+
+
   return (
     <div className="App">
       <Layout>
