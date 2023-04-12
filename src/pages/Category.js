@@ -18,7 +18,7 @@ export default function Category(){
     return<NotFound/>
   }
   return(
-    <div className="Category">
+    <div>
       <h1>{category.name}</h1>
       
     </div>
