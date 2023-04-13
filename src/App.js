@@ -11,15 +11,17 @@ import { createContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection } from "./firebase";
+import { categoryCollection, productsCollection } from "./firebase";
 
 export const AppContext = createContext({
   categories: [],
+  products: []
 });
 
 
 function App() {
   const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getDocs(categoryCollection)
@@ -33,10 +35,22 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    getDocs(productsCollection)
+    .then(({docs}) => {
+      setProducts(
+        docs.map(doc => ({
+          ...doc.data(),
+          id:doc.id
+        }))
+      )
+    });
+  }, []);
+
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories }} >
+      <AppContext.Provider value={{ categories, products }} >
         <Layout>
         <Routes>
           <Route path="/" element={<Home/>} />  
