@@ -6,3 +6,6 @@
 .ProductsList .Product img {
   width: 100%;
 }
+.ProductsList .imageProduct{
+  width: 100px;
+}
