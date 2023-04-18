@@ -7,7 +7,7 @@ import ProductsList from "../components/Products/ProductsList";
 export default function Category() {
   const { params } = useMatch("/categories/:slug");
 
-  const {categories} = useContext(AppContext);  
+  const { categories } = useContext(AppContext);
 
   const category = categories.find((category) => category.slug === params.slug);
   if (!category) {
@@ -16,7 +16,7 @@ export default function Category() {
   return (
     <div className="Category">
       <h1>{category.name}</h1>
-      <ProductsList category={category}/>
+      <ProductsList category={category} />
     </div>
   );
 }
