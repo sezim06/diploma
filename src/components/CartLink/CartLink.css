@@ -1,0 +1,10 @@
+.CartLink .cart {
+  width: 40px;
+  margin-right: 3px;
+  background-color: rgba(237, 91, 186, 0.2);
+}
+.CartLink a {
+  display: flex;
+  align-items: center;
+  background-color: #fda2d2;
+}

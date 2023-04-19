@@ -1,0 +1,16 @@
+.OrderForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.OrderForm input{
+  border: 1px solid #000;
+  width: 200px;
+  line-height: 35px;
+  border-radius: 0;
+  padding: 0;
+}
+.OrderForm label{
+  display: block;
+  margin-bottom: 20px;
+}
