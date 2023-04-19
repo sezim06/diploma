@@ -1,0 +1,14 @@
+.Auth button {
+  background-color: rgb(175, 8, 108);
+  color: #fff;
+  padding: 5px 30px;
+  border: #fff;
+}
+.Auth {
+  padding-left: 40px;  
+}
+.Auth span {
+  color: rgb(175, 8, 108);
+  line-height: 40px;
+  border-bottom: 1px solid rgb(175, 8, 108);
+}
