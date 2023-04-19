@@ -9,13 +9,12 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-        <div>
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-cart.svg"
-            alt="cart"
-          />
-        </div>
-        Cart({total})
+        <img
+          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-cart-100-most-used-icons-flaticons-lineal-color-flat-icons.svg"
+          alt="cart"
+          className="cart"
+        />
+        {total}
       </NavLink>
     </div>
   );
