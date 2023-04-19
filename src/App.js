@@ -1,66 +1,80 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
-import Books from "./pages/Books";
-import Contact from "./pages/Contact";
-import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { createContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, productsCollection } from "./firebase";
-import Cart from "./pages/Cart";
+import { categoryCollection, onAuthChange, productsCollection } from "./firebase";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+import ThankYou from "./pages/ThankYou";
 
+// Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
   products: [],
-  cart: {},
-  setCart: () => {},
+  // контекст для корзины
+  cart: {}, // содержимое корзинки
+  setCart: () => {}, // изменить содержимое корзики
+
+  user: null,
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
+
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem('cart')) || {};
+  });
+
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    getDocs(categoryCollection).then(({ docs }) => {
-      setCategories(
-        docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
-    });
-  }, []);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
-  useEffect(() => {
-    getDocs(productsCollection).then(({ docs }) => {
-      setProducts(
-        docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
+  useEffect(() => { // выполнить только однажды
+    getDocs(categoryCollection) // получить категории
+      .then(({ docs }) => { // когда категории загрузились
+        setCategories( // обновить состояние
+          docs.map(doc => ({ // новый массив
+            ...doc.data(), // из свойств name, slug
+            id: doc.id // и свойства id
+          }))
+        )
+      });
+
+    getDocs(productsCollection) // получить категории
+      .then(({ docs }) => { // когда категории загрузились
+        setProducts( // обновить состояние
+          docs.map(doc => ({ // новый массив
+            ...doc.data(), // из свойств name, slug
+            id: doc.id // и свойства id
+          }))
+        )
+      });
+
+    onAuthChange(user => {
+      setUser(user);
     });
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart />}/>
-            <Route path="/books" element={<Books />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/about" element={<h1>About</h1>} />
+            <Route path="/contacts" element={<h1>Contacts</h1>} />
+            <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
-            <Route path="/product/:slug" element={<Product />} />
+            <Route path="/products/:slug" element={<Product />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
