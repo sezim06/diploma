@@ -1,9 +1,9 @@
 import "./Logo.css"
-import logo from "../../assets/logoo.png"
+import logooo from "../../assets/logooo.png"
 export default function Logo(){
   return (
     <div className="Logo">
-      <img src={logo} alt="logo0" className="logo"/>
+      <img src={logooo} alt="logo0" className="logo"/>
 
     </div>
   )
