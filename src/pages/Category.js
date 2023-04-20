@@ -3,6 +3,7 @@ import NotFound from "./NotFound";
 import { useContext } from "react";
 import { AppContext } from "../App";
 import ProductsList from "../components/Products/ProductsList";
+import "./Pages.css"
 
 export default function Category() {
   const { params } = useMatch("/categories/:slug");
