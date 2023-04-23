@@ -8,7 +8,8 @@
   padding-left: 40px;  
 }
 .Auth span {
-  color: rgb(175, 8, 108);
+  color: rgb(0, 0, 0);
   line-height: 40px;
-  border-bottom: 1px solid rgb(175, 8, 108);
+  padding: 0 15px 
+  
 }
