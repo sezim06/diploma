@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css"
 export default function Nav(){
   return (
-    <nav className="Nav">
+    <nav className="main-nav">
       <ul>
         <li className="NavItem">
           <NavLink className="active" to="/">Home</NavLink>
