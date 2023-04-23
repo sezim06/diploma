@@ -8,6 +8,7 @@ export default function Auth() {
 
   return (
     <div className="Auth">
+      
       {!user ? <button  onClick={signIn}>Sign in</button> : null}
       {user ? <span>{user.displayName}</span> : null}
       {user ? <button onClick={signOff}>Sign out</button> : null}
