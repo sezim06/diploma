@@ -9,6 +9,7 @@ import { categoryCollection, onAuthChange, productsCollection } from "./firebase
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
+import "./App.css"
 
 // Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
