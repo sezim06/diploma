@@ -5,6 +5,8 @@ footer {
 h4 {
   font-size: 20px;
   margin-bottom: 20px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px; 
 }
 
 p {
