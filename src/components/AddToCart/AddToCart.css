@@ -1,5 +1,13 @@
 .AddToCart .AddToCart{
-  background-color: #938d8d;
+  background-image: linear-gradient(rgba(107, 106, 106, 0.457), rgba(82, 10, 60, 0.443));
   padding: 10px 15px;
-
+  border: white;
+  border-radius: 12px;
+  font-size: 15px;
+ 
+}
+.AddToCart .AddToCart:hover {
+  background-color: #fff;
+  transition: .5s;
+  cursor: pointer;
 }
