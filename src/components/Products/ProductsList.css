@@ -3,10 +3,21 @@
   flex-direction: column;
   max-width: 200px;
   border: 1px solid #000;
-  width: 250px;
+  border-radius: 13px;
+  width: 200px;
   padding: 10px 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+  background-image: linear-gradient(rgba(253, 253, 253, 0.447), rgba(75, 65, 65, 0.406));
+  margin-top: 15px;
 }
+.ProductsList{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap ;
+  
+
+}
+
 
 .ProductsList .Product img {
   width: 100%;
@@ -18,8 +29,14 @@
 }
 
 .ProductsList span {
-  color: rgb(175, 8, 108);
+  color: rgb(84, 81, 81);
   font-size: 15px;
   font-weight: bold;
 
+}
+.ProductsList a {
+  font-family: 'Poiret One', cursive;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
 }
