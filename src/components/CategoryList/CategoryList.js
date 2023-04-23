@@ -17,8 +17,9 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <h3>
-        <span>C</span>ategories
+        <span>B</span>est Ever Book Lists  
       </h3>
+      
       <ul>{output}</ul>
     </div>
   );
