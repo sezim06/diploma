@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 .Layout {
   display: grid;
@@ -17,8 +18,9 @@
   grid-area: header;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(237, 91, 186, 0.2);
-
+  background-color: rgba(128, 128, 128, 0.295);
+  border: 1px solid grey;
+  border-radius: 10px;
   padding: 0 30px;
   align-items: center;
 }
@@ -40,4 +42,8 @@
   max-width: 60px;
 
 
+}
+.Layout h1 span{
+  flex-direction: column;
+  
 }
