@@ -1,5 +1,14 @@
 .CategoryList ul li {
   list-style-type: none;
+  border-bottom: 1px solid #000;
+}
+.CategoryList ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: .35s ease color;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
 }
 .CategoryList ul {
   padding: 0;
@@ -29,6 +38,17 @@
 .CategoryList {
   background: rgba(236, 130, 183, 0.5);
   padding: 10vh 20px;
+  border: 1px solid gray;
+  border-radius: 15px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(255, 1, 217, 0.345));
+
+
+
+}
+.CategoryList:hover {
+  background-image: linear-gradient(rgba(243, 99, 166, 0.737), rgba(33, 27, 32, 0.473));
+  transition: 5s;
+  
 }
 
 .CategoryList h3 span {
