@@ -7,7 +7,7 @@
 }
 
 .Nav .NavItem a {
-  color: rgb(185, 19, 99);
+  color: rgb(175, 8, 108);
 
   font-size: 17px;
 
@@ -17,6 +17,7 @@
 .Nav ul {
   float: right;
   margin-right: 20px;
+  
 
 }
 
@@ -34,11 +35,13 @@
 .Nav ul li a {
   text-transform: uppercase;
   padding: 7px 13px;
-  border-radius: 13px;
+  border-radius: 30px;
+  letter-spacing: 2px;
 }
 
-a.active,
-a:hover {
-  background-color: #fda2d2;
-  transition: .5s;
+.Nav ul li a:active,
+.Nav ul li a:hover {
+background-color: rgba(237, 83, 183, 0.658);
+transition: .5s;
 }
+
