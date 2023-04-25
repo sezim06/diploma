@@ -1,11 +1,10 @@
-import { useMatch } from "react-router-dom";
 import { useContext } from "react";
+import { useMatch } from "react-router-dom";
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
-import "./Product.css"
 
 export default function Product() {
-  const { params } = useMatch("/product/:slug");
+  const { params } = useMatch("/products/:slug");
   const { products } = useContext(AppContext);
 
   const product = products.find((product) => product.slug === params.slug);
@@ -18,7 +17,7 @@ export default function Product() {
     <div className="Product">
       <h1>{product.name}</h1>
       <img src={product.picture} alt={product.name} />
-      <span>{product.price}</span>
+      <span>{product.price} som</span>{" "}
     </div>
   );
 }
