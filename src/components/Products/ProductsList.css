@@ -31,9 +31,10 @@
 }
 
 .ProductsList span {
-  color: rgb(84, 81, 81);
+  color: rgb(175, 8, 108);
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
 
 }
 .ProductsList a {
@@ -41,4 +42,5 @@
   color: #000;
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
 }
