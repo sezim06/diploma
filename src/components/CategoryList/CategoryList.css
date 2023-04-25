@@ -1,6 +1,7 @@
 .CategoryList ul li {
   list-style-type: none;
   border-bottom: 1px solid grey;
+  flex-wrap: wrap;
 }
 
 
