@@ -1,7 +1,8 @@
 .OrderList{
   border-radius: 1px solid #000;
   border-bottom: 1rem;
+  
 }
 .OrderList .Order img {
-  min-width: 40px;
+  min-width: 50px;
 }
