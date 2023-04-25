@@ -13,13 +13,11 @@
 
 }
 
-
-.Nav ul {
-  float: right;
-  margin-right: 20px;
-
-
+.Nav .Nav {
+  display: flex;
 }
+
+
 
 .Nav {
   height: 100px;
@@ -39,8 +37,25 @@
   letter-spacing: 2px;
 }
 
-.Nav ul li a:active,
+.Nav ul li a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
 .Nav ul li a:hover {
-  background-color: rgba(237, 83, 183, 0.658);
-  transition: .5s;
+
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.Nav ul li a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
