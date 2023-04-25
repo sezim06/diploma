@@ -3,13 +3,22 @@
   color: #fff;
   padding: 5px 30px;
   border: #fff;
+  border-radius: 10px;
+
 }
-.Auth {
-  padding-left: 40px;  
+.Auth button:hover {
+  transition: .4s ease-in-out;
+  background: rgb(188, 88, 148);
 }
+
 .Auth span {
   color: rgb(0, 0, 0);
   line-height: 40px;
-  padding: 0 15px 
+  font-family: 'Cutive Mono', monospace;
+  font-size: 15px;
+  font-weight: bold;
+}
+.Auth a {
   
+  color: rgb(145, 4, 88);
 }
