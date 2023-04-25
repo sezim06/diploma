@@ -1,7 +1,8 @@
 .OrderForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #bea8a8;
+  
 }
 .OrderForm input{
   border: 1px solid #000;
@@ -11,6 +12,11 @@
   padding: 0;
 }
 .OrderForm label{
+  text-align: center;
+
   display: block;
   margin-bottom: 20px;
+}
+.OrderForm h2 {
+color: #fff;
 }
