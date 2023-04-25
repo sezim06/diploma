@@ -1,13 +1,24 @@
-.AddToCart .AddToCart{
-  background-image: linear-gradient(rgba(107, 106, 106, 0.457), rgba(82, 10, 60, 0.443));
+.AddToCart .AddToCart {
   padding: 10px 15px;
   border: white;
   border-radius: 12px;
   font-size: 15px;
- 
+
 }
+.AddToCart {
+ margin: 0 0 0 10px ;
+}
+
+
 .AddToCart .AddToCart:hover {
-  background-color: #fff;
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: .5s;
   cursor: pointer;
+}
+
+.AddToCart .AddToCart:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
