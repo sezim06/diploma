@@ -9,30 +9,33 @@ export default function OrderList() {
     return "No orders found.";
   }
 
-  const output = orders.map(order => {
-    const cartOutput = Object.keys(order.cart).map(productId => {
-      const product = products.find(product => product.id === productId);
+  const output = orders.map((order) => {
+    const cartOutput = Object.keys(order.cart).map((productId) => {
+      const product = products.find((product) => product.id === productId);
+
+      if (!product) {
+        return "Product not found";
+      }
 
       return (
         <div>
-          {product.name}: {order.cart[productId]} X {product.price} som = {order.cart[productId] * product.price} som
+          <img src={product.img} alt="product.name"/>
+          {product.name}: {order.cart[productId]} X {product.price} som ={" "}
+          {order.cart[productId] * product.price} som
         </div>
       );
-    })
+    });
 
     return (
       <div className="Order">
-        <div><span>Name:</span> {order.name}</div>
+        <div>Name: {order.name}</div>
         <div>Phone: {order.phone}</div>
         <div>Address: {order.address}</div>
         <div>Cart: {cartOutput}</div>
       </div>
     );
-  })
+  });
 
-  return (
-    <div className="OrderList">
-      {output}
-    </div>
-  );
+  return <div className="OrderList">{output}</div>;
+
 }
