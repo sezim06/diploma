@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
-import "./Nav.css"
+import "./Nav.css";
 export default function Nav(){
   return (
-    <nav className="main-nav">
+<div className="Nav">
+<nav className="main-nav">
       <ul>
         <li className="NavItem">
           <NavLink className="active" to="/">Home</NavLink>
@@ -18,5 +19,6 @@ export default function Nav(){
         </li>
       </ul>
     </nav>
+</div>
   )
 }
