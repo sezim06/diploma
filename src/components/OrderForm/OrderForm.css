@@ -1,22 +1,54 @@
 .OrderForm {
   display: flex;
   flex-direction: column;
-  background-color: #bea8a8;
-  
+  background-color: rgba(128, 128, 128, 0.295);
+  width: 33%;
+ border-radius: 10px;  
 }
-.OrderForm input{
-  border: 1px solid #000;
+
+.OrderForm input {
   width: 200px;
   line-height: 35px;
   border-radius: 0;
   padding: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color:transparent ;
+  border-bottom: 1px solid #000;
 }
-.OrderForm label{
-  text-align: center;
 
-  display: block;
-  margin-bottom: 20px;
+.OrderForm label {
+  text-align: center;
+letter-spacing: 1px;
+ 
+  margin-bottom: 15px;
 }
+
 .OrderForm h2 {
-color: #fff;
+  color: rgb(110, 7, 69);
+text-align:center ;
+}
+
+.OrderForm button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.OrderForm button:hover {
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.OrderForm button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+.OrderForm span {
+  color:rgb(110, 7, 69) ;
+  text-transform: uppercase;
+  
 }
