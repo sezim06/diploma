@@ -4,7 +4,33 @@
 }
 .CardList .CartItem img {
   width: 80px;
+  border: #000 solid 1px;
 }
 .CardList h1 {
 font-size: 10px;
+}
+.CardList a {
+  color: #000;
+  font-family: 'Assistant', sans-serif;
+  margin: 0 10px;
+}
+.CardList button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+.CardList button:hover {
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.CardList button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CardList input {
+  width: 60px;
+  padding: 4px;
 }
