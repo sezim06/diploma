@@ -7,28 +7,42 @@
 }
 
 .Nav .NavItem a {
-  color: rgb(175, 8, 108);
-
-  font-size: 17px;
+  color: #4c4b50;
+  padding: 20px;
+  transition: .3s;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
 
 }
 
-.Nav .Nav {
+
+
+ .Nav .Nav {
   display: flex;
 }
 
 
 
 .Nav {
-  height: 100px;
-  width: 100%;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: transparent;
+  padding: 0 20px;
+  border-radius: 40px;
+  
 }
+
 
 .Nav ul li {
   display: inline-block;
   line-height: 95px;
-  margin: 0 5px;
+  margin: 0 6px;
 }
+
 
 .Nav ul li a {
   text-transform: uppercase;
