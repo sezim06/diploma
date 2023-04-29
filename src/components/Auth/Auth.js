@@ -10,16 +10,24 @@ export default function Auth() {
   return (
     <div className="Auth">
       {user ? (
-        <span>
-          Hello <Link to="/orders">{user.displayName}</Link>!
-          <button onClick={logOut}>Sign out</button>
-        </span>
+        <div className="Auth-log-out">
+          <div>
+            Hello <Link to="/orders">{user.displayName}</Link>!
+          </div>
+          <div>
+            <button onClick={logOut}>Sign out</button>
+          </div>
+        </div>
       ) : (
         
-        <span>
-          Hello guest!
-          <button onClick={logIn}>Sign in</button>
-        </span>
+        <div className="Auth-log-in">
+          <div>
+            Hello guest!
+          </div>
+          <div>
+            <button onClick={logIn}>Sign in</button>
+          </div>
+        </div>
       )}
     </div>
   );
