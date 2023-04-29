@@ -16,6 +16,8 @@ export default function Home(){
         <li>Built a CRUD application using Node.js and MongoDB</li>
         <li>Contributed to an open-source project on GitHub</li>
       </ol>
+      
+        
     </div>
   )
 }
