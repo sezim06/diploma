@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import "./CategoryList.css";
 import { useContext } from "react";
 import { AppContext } from "../../App";
+import AddCategory from "../AddCategory/AddCategory";
+import DeleteCategory from "../DeleteCategory/DeleteCategory";
 
 export default function CategoryList() {
   const { categories } = useContext(AppContext);
@@ -10,6 +12,7 @@ export default function CategoryList() {
       <div>
         <img src={category.icon} alt={category.name} className="icon" />
         <NavLink to={`/categories/${category.slug}`}>{category.name}</NavLink>
+        <DeleteCategory category={category} />
       </div>
     </li>
   ));
@@ -17,10 +20,11 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <h3>
-        <span>B</span>est Ever Book Lists  
+        <span>B</span>est Ever Book Lists
       </h3>
-      
+
       <ul>{output}</ul>
+      <AddCategory />
     </div>
   );
 }
