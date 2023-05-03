@@ -1,0 +1,28 @@
+.AddCategory input {
+  background-color: transparent;
+ width: 50%;
+ height: 30px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+}
+.AddCategory button {
+  background-color:transparent;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+cursor: pointer;
+}
+.AddCategory button:hover {
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.AddCategory button:active {
+transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.571);
+}
+.AddCategory button:hover {
+  border-bottom: 1px red;
+}
