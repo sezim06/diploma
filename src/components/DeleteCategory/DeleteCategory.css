@@ -1,0 +1,21 @@
+.DeleteCategory  {
+  background-color: rgba(128, 128, 128, 0.447);
+  padding: 3px 20px;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: #000000;
+}
+.DeleteCategory:hover {
+
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+.DeleteCategory:active {
+transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.DeleteCategory .DeleteCategory {
+  color: #000000;
+}
