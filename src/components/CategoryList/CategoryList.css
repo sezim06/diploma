@@ -68,3 +68,5 @@
   align-items: center;
   display: flex;
 }
+.CategoryList ul li div a:focus{
+  color: rgb(143, 12, 91);}
