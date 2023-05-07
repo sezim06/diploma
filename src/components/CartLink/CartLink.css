@@ -1,8 +1,10 @@
 .CartLink .cart {
   width: 40px;
   margin-right: 3px;
+
   
 }
+
 .CartLink a {
   display: flex;
   align-items: center;

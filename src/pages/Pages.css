@@ -1,16 +1,32 @@
 .Cart span {
   color: rgb(175, 8, 108);
 }
+/* HOME PAGES */
 .Home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 63vh;
-  background-color: #a19393;
+background-color: #9f959527;
+  background-repeat: no-repeat;
+   text-align: center;
+   line-height: 30px;
   font-family: Arial, sans-serif;
-  border: 1px solid grey;
   border-radius: 10px;
+}
+.Home p {
+  max-width: 500px;
+}
+.Home a {
+  color: black;
+}
+.Home h1:hover{
+color: rgb(175, 8, 108);
+transition: 1s;
+}
+.Home h1{
+  padding: 10px;
 }
 .Home {
   max-width: 800px;
@@ -118,3 +134,153 @@ button[type="submit"] {
   margin: 0;
 }
 
+
+/* PRODUCT */
+
+.Product img {
+  width: 70%;
+}
+.Product {
+  text-align: center;
+}
+
+/* BOOKS PAGES */
+
+.Books {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #9f959527;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+
+}
+
+.Books h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Books h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.Books p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .Books h1 {
+    font-size: 2rem;
+  }
+  
+  .Books h2 {
+    font-size: 1.5rem;
+  }
+  
+  .Books p {
+    font-size: 1.1rem;
+  }
+}
+
+/* CONTACT PAGES */
+
+.Contacts {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #9f959527;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.Contacts h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Contacts h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.Contacts p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.Contacts a {
+  color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .Contacts h1 {
+    font-size: 2rem;
+  }
+  
+  .Contacts h2 {
+    font-size: 1.5rem;
+  }
+  
+  .Contacts p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* DELIVERY PAGES */
+
+.Delivery {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #9f959527;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+
+}
+
+
+.Delivery h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Delivery h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.Delivery p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.Delivery a {
+  color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .Delivery h1 {
+    font-size: 2rem;
+  }
+  
+  .Delivery h2 {
+    font-size: 1.5rem;
+  }
+  
+  .Delivery p {
+    font-size: 1.1rem;
+  }
+}
