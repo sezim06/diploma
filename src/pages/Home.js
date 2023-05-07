@@ -1,24 +1,35 @@
-import "./Pages.css"
+import "./Pages.css";
 
-export default function Home(){
-return(
-<div className="Home">
-{/* <iframe width="560" height="315" src="https://www.youtube.com/embed/i-qT5n_5Mys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-<h1>Welcome to My Page</h1>
-<p>This is my home page. Here you will find the best books, novels, recipes, crime books and thrillers.</p>
-<h2>My Interests</h2>
-<ul>
-<li>Reading</li>
-<li>Books</li>
-<li>Traveling</li>
-</ul>
+export default function Home() {
+  return (
+    <div className="Home">
+      <div className="text-block">
+        <a href="https://youtu.be/KwXyVh1zIhM">
+          <h1>Welcome to My Page</h1>
+        </a>
+        <p>
+          This is my home page. Here you will find the best books, novels,
+          recipes, crime books and thrillers.
+        </p>
+        <a href="https://youtu.be/KwXyVh1zIhM">
+        <h1>My Interests</h1>
+        </a>
+        
+        <ul>
+          <a href="https://youtu.be/5wvgJePdZ7s"><li>Reading</li></a>
+          <a href="https://youtu.be/jxcMRkqaQdw"><li>Books</li></a>
+          <a href="https://youtu.be/TcgqDs-95Uw"><li>Traveling</li></a>
+        </ul>
+<a href="https://youtu.be/KwXyVh1zIhM">
+<h1>My Favorite Books</h1>
 
-<h2>My Favorite Books</h2>
-<ul>
-<li>The Great Gatsby by F. Scott Fitzgerald</li>
-<li>To Kill a Mockingbird by Harper Lee</li>
-<li>Pride and Prejudice by Jane Austen</li>
-</ul>
-</div>
-)
+</a>
+        <ul>
+          <li>The Great Gatsby by F. Scott Fitzgerald</li>
+          <li>To Kill a Mockingbird by Harper Lee</li>
+          <li>Pride and Prejudice by Jane Austen</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
