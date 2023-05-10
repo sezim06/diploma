@@ -1,5 +1,5 @@
 
-import Logo from "../Logo/Logo";
+import Logo from "../ui/Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Drawer.css";
 

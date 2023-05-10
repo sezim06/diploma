@@ -7,7 +7,7 @@ import Nav from "../Nav/Nav";
 import NavToggle from "../NavToggle/NavToggle";
 import "./Layout.css";
 import Footer from "../../pages/Footer";
-import Logo from "../Logo/Logo";
+import Logo from "../ui/Logo/Logo";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);

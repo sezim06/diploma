@@ -1,5 +1,5 @@
 import "./Logo.css";
-import llogo from "../../assets/loggo.png";
+import llogo from "../../../assets/loggo.png";
 import { Link } from "react-router-dom";
 export default function Logo() {
   return (
