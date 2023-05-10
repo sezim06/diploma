@@ -138,10 +138,10 @@ button[type="submit"] {
 /* PRODUCT */
 
 .Product img {
-  width: 70%;
+  width: 200px;
 }
 .Product {
-  text-align: center;
+  text-align: start;
 }
 
 /* BOOKS PAGES */
