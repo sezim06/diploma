@@ -6,7 +6,6 @@ import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
 import {
-  categoryCollection,
   onAuthChange,
   onCategoriesLoad,
   ordersCollection,
