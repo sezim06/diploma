@@ -1,11 +1,12 @@
 import "./Logo.css";
-import logo from "../../assets/loggo.png";
+import Logo from "../../assets/loggo.png";
+import { Link } from "react-router-dom";
 export default function Logo() {
   return (
     <div className="Logo">
-      <a href="https://youtu.be/IaXjbgH3cZY">
-        <img src={logo} alt="logo" className="logo" />
-      </a>
+      <Link href="https://youtu.be/IaXjbgH3cZY">
+        <img src={Logo} alt="logo" className="logo" />
+      </Link>
     </div>
   );
 }
