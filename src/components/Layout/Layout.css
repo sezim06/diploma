@@ -11,7 +11,7 @@
     "aside main"
     "footer footer";
   grid-template-columns: 1fr 3fr;
-  max-width: 100%;
+  max-width: 150%;
   margin: 50px;
   font-family: 'Alkatra', cursive;
 }
