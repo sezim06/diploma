@@ -6,7 +6,9 @@
 }
 
 .CartLink a {
-  display: flex;
   align-items: center;
-
+ 
+}
+.CartLink {
+  display: flex;
 }
