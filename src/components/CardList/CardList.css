@@ -1,37 +1,47 @@
 .CardList .CartItem {
   display: flex;
   align-items: center;
+  border-bottom: #000 1px solid;
+  padding: 10px;
+
 }
+
 .CardList {
   background-color: rgba(128, 128, 128, 0.295);
   padding: 10px 20px;
-  border-radius:10px;
+  border-radius: 10px;
   border: grey 1px solid;
-  
+
 }
+
 .CardList .CartItem img {
   width: 60px;
   border: #8a7c7c solid 1px;
 }
+
 .CardList h1 {
-font-size: 10px;
+  font-size: 10px;
 }
+
 .CardList a {
   color: #000;
   font-family: 'Assistant', sans-serif;
   margin: 0 10px;
 }
+
 .CardList button {
   padding: 10px 20px;
   border-radius: 15px;
   border: 1px solid grey;
 }
+
 .CardList button:hover {
 
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 }
+
 .CardList button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -44,9 +54,11 @@ font-size: 10px;
   border: 1px solid grey;
   border-radius: 5px;
 }
+
 .CardList span {
-padding: 10px;}
+  padding: 10px;
+}
 
 .CardList .CartItem div {
-align-items: center;
+  align-items: center;
 }
