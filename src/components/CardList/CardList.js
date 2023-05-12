@@ -25,19 +25,18 @@ export default function CardList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <div>
-          <img src={product.picture} alt={product.name} />
-          <Link to={"/product/" + product.slug}>{product.name}</Link>
+        <img src={product.picture} alt={product.name} />
+        <Link to={"/product/" + product.slug}>{product.name}</Link>
 
-          <input
-            type="number"
-            value={cart[product.id]}
-            min={1}
-            onChange={(event) => onQuantityChange(product, +event.target.value)}
-          />
+        <input
+          type="number"
+          value={cart[product.id]}
+          min={1}
+          onChange={(event) => onQuantityChange(product, +event.target.value)}
+        />
 
-          <span>US${cart[product.id] * product.price}</span>
-        </div>
+        <span>US${cart[product.id] * product.price}</span>
+
         <button onClick={() => onItemRemove(product)}>Remove</button>
       </div>
     ));

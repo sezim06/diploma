@@ -46,3 +46,7 @@ font-size: 10px;
 }
 .CardList span {
 padding: 10px;}
+
+.CardList .CartItem div {
+align-items: center;
+}
