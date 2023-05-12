@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 export default function CardList() {
   const { products, cart, setCart } = useContext(AppContext);
-  
+
   function onQuantityChange(product, qty) {
     setCart({
       ...CardList,
-      [product.id]:qty
-    })
+      [product.id]: qty,
+    });
   }
 
-  function onItemRemove(product){
-    const newCart = {...cart} ;
+  function onItemRemove(product) {
+    const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }
@@ -25,16 +25,19 @@ export default function CardList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <img src={product.picture} alt={product.name}/>
-        <Link to={"/product/" + product.slug}>{product.name}</Link>
+        <div>
+          <img src={product.picture} alt={product.name} />
+          <Link to={"/product/" + product.slug}>{product.name}</Link>
 
-        <input type="number"
-         value={cart[product.id]}
-          min={1}
-           onChange={(event) => onQuantityChange(product, +event.target.value)}
-           />
+          <input
+            type="number"
+            value={cart[product.id]}
+            min={1}
+            onChange={(event) => onQuantityChange(product, +event.target.value)}
+          />
 
-        <span>US${cart[product.id] * product.price}</span>
+          <span>US${cart[product.id] * product.price}</span>
+        </div>
         <button onClick={() => onItemRemove(product)}>Remove</button>
       </div>
     ));
