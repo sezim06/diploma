@@ -2,9 +2,16 @@
   display: flex;
   align-items: center;
 }
+.CardList {
+  background-color: rgba(128, 128, 128, 0.295);
+  padding: 10px 20px;
+  border-radius:10px;
+  border: grey 1px solid;
+  
+}
 .CardList .CartItem img {
-  width: 80px;
-  border: #000 solid 1px;
+  width: 60px;
+  border: #8a7c7c solid 1px;
 }
 .CardList h1 {
 font-size: 10px;
@@ -33,4 +40,9 @@ font-size: 10px;
 .CardList input {
   width: 60px;
   padding: 4px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
+.CardList span {
+padding: 10px;}
