@@ -284,3 +284,136 @@ button[type="submit"] {
     font-size: 1.1rem;
   }
 }
+
+
+/* PAGES NOT FOUND */
+/* Global */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://msmux.github.io/testing/src/assets/fonts/gotham.css);
+body {
+  background-color: #FFF;
+  color: #2b3133;
+  font: normal 16px/1.6 'Open Sans';
+  margin: 0;
+  padding: 0;
+  .tk { stroke-width: 2; stroke-linecap:round;fill:none;stroke:#562873}
+  .tn { stroke-width: 1; }
+  .fd { stroke: none; fill: #562873; }
+  .fl { fill: #FFF; }
+}
+p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #562873;
+  margin: 20px;
+}
+
+/* Animation specific */
+.animation-404 {
+  position: relative;
+  margin: 0 20px;
+}
+.animation-404 h1 {
+  font: normal 48px/1 'gu';
+  color: #562a73;
+  position: relative;
+  letter-spacing: -1px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 125px;
+  left: -65px;
+}
+.animation-404:after {
+  border-bottom: 2px solid #562a73;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+}
+.animation-404 h1 i {
+  font-style: normal;
+  color: #00AEEF;
+  transform: rotate(35deg) translate3d(-9px,-0px,0);
+  display: inline-block;
+  animation: upright 1s 4s forwards;
+  transform-origin: center bottom;
+}
+.animation-404 #forklift-body {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 130px;
+  height: 125px;
+  animation: approach 6s 2s forwards;
+}
+.animation-404 svg #tines {
+  animation: lift 2s 3s forwards;
+}
+.animation-404 svg .cab {
+  animation: vibrate 0.2s infinite;
+}
+
+
+/* Animation definitions */
+@keyframes vibrate {
+  from { transform: translate3d(0,0,0); }
+  to { transform: translate3d(0,-1px,0); }
+}
+@keyframes upright {
+  from { transform: rotate(35deg) translate3d(-9px,-0px,0); }
+  to { transform: rotate(0deg) translate3d(1px,0,0); }
+}
+@keyframes lift {
+  0% { transform: translate3d(0,0,0) }
+  30% { transform: translate3d(0,20px,0) }
+  100% { transform: translate3d(0,7px,0) }
+}
+@keyframes lift-768 {
+  0% { transform: translate3d(0,0,0) }
+  30% { transform: translate3d(0,20px,0) }
+  100% { transform: translate3d(0,2px,0) }
+}
+@keyframes approach {
+  0% { transform: translate3d(0,0,0) }
+  33% { transform: translate3d(calc(-50vw + 144px),0,0) }
+  66% { transform: translate3d(calc(-50vw + 144px),0,0) }
+  100% { transform: translate3d(0,0,0) }
+}
+@keyframes approach-768 {
+  0% { transform: translate3d(0,0,0) }
+  33% { transform: translate3d(calc(-50vw + 167px),0,0) }
+  66% { transform: translate3d(calc(-50vw + 167px),0,0) }
+  100% { transform: translate3d(0,0,0) }
+}
+@keyframes spin {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg); }
+}
+
+@media screen and ( min-width: 768px ){
+  .animation-404:after {
+    bottom: 7px;
+  }
+  .animation-404 h1 {
+    font-size: 70px;
+    padding-top: 120px;
+    width: 184px;
+    left: -92px;
+  }
+  .animation-404 #forklift-body {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    animation: approach-768 6s 2s forwards;
+  }
+  .animation-404 svg #tines {
+    animation: lift-768 2s 3s forwards;
+  }
+}
