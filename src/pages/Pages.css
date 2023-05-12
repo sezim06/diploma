@@ -1,6 +1,4 @@
-.Cart span {
-  color: rgb(175, 8, 108);
-}
+
 /* HOME PAGES */
 .Home {
   display: flex;
@@ -153,7 +151,6 @@ button[type="submit"] {
   background-color: #9f959527;
   border-radius: 10px;
   font-family: Arial, sans-serif;
-
 }
 
 .Books h1 {
@@ -292,20 +289,20 @@ button[type="submit"] {
 @import url(https://msmux.github.io/testing/src/assets/fonts/gotham.css);
 body {
   background-color: #FFF;
-  color: #2b3133;
+  color: #562a73;
   font: normal 16px/1.6 'Open Sans';
   margin: 0;
   padding: 0;
   .tk { stroke-width: 2; stroke-linecap:round;fill:none;stroke:#562873}
   .tn { stroke-width: 1; }
-  .fd { stroke: none; fill: #562873; }
+  .fd { stroke: none; fill: #562a73; }
   .fl { fill: #FFF; }
 }
-p {
+.NotFound p {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.38;
-  color: #562873;
+  color: #562a73;
   margin: 20px;
 }
 
@@ -417,3 +414,4 @@ p {
     animation: lift-768 2s 3s forwards;
   }
 }
+
