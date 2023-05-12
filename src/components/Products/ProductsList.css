@@ -24,10 +24,13 @@
 .ProductsList .Product img {
   width: 100%;
   display: flex;
-}
+ 
+  }
+
 
 .ProductsList .imageProduct {
   width: 100px;
+
 }
 
 .ProductsList span {
