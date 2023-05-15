@@ -14,10 +14,14 @@ background-color: #9f959527;
   border-radius: 10px;
 }
 .Home p {
+  color: #000;
   max-width: 500px;
 }
 .Home a {
   color: black;
+}
+.Home ul li{
+  color: #000;
 }
 .Home h1:hover{
 color: rgb(175, 8, 108);
@@ -72,12 +76,16 @@ h4 {
   margin-bottom: 20px;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px; 
+  color: #000;
 }
 
-p {
+ p {
   font-size: 16px;
   line-height: 25px;
+  color: #000;
+  line-height: 30px;
 }
+
 
 .container {
   max-width: 1140px;
@@ -88,12 +96,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px ;
 }
 
 .col-md-4 {
   width: calc(33.33% - 20px);
   margin-right: 10px;
   padding: 0px 20px;
+}
+.col-md-4  span{
+  color: #014b65;
 }
 
 .col-md-4:last-child {
@@ -102,6 +114,7 @@ p {
 
 form {
   margin-top: 20px;
+  display: flex;
 }
 
 input[type="email"] {
@@ -113,7 +126,7 @@ input[type="email"] {
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #0b62be;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -157,11 +170,13 @@ button[type="submit"] {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #000;
 }
 
 .Books h2 {
   font-size: 1.8rem;
   margin-top: 30px;
+  color: #000;
 }
 
 .Books p {
@@ -169,6 +184,7 @@ button[type="submit"] {
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
+  color: #000;
 }
 
 @media (max-width: 600px) {
@@ -200,11 +216,13 @@ button[type="submit"] {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #000;
 }
 
 .Contacts h2 {
   font-size: 1.8rem;
   margin-top: 30px;
+  color: #000;
 }
 
 .Contacts p {
@@ -212,6 +230,7 @@ button[type="submit"] {
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
+  color: #000;
 }
 
 .Contacts a {
@@ -250,11 +269,13 @@ button[type="submit"] {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #000;
 }
 
 .Delivery h2 {
   font-size: 1.8rem;
   margin-top: 30px;
+  color: #000;
 }
 
 .Delivery p {
@@ -262,11 +283,10 @@ button[type="submit"] {
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
+  color: #000;
 }
 
-.Delivery a {
-  color: #007bff;
-}
+
 
 @media (max-width: 600px) {
   .Delivery h1 {
@@ -287,7 +307,7 @@ button[type="submit"] {
 /* Global */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 @import url(https://msmux.github.io/testing/src/assets/fonts/gotham.css);
-body {
+ body {
   background-color: #FFF;
   color: #562a73;
   font: normal 16px/1.6 'Open Sans';
