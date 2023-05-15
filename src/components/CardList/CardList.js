@@ -35,7 +35,7 @@ export default function CardList() {
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
 
-        <span>US${cart[product.id] * product.price}</span>
+        <span>US${(cart[product.id] * product.price).toFixed(2)}</span>
 
         <button onClick={() => onItemRemove(product)}>Remove</button>
       </div>
