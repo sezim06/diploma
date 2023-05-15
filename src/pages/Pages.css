@@ -13,6 +13,7 @@ background-color: #9f959527;
   font-family: Arial, sans-serif;
   border-radius: 10px;
 }
+
 .Home p {
   color: #000;
   max-width: 500px;
@@ -31,7 +32,7 @@ transition: 1s;
   padding: 10px;
 }
 .Home {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 30px;
   font-family: Arial, sans-serif;
