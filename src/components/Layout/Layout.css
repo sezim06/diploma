@@ -42,10 +42,14 @@
 
 .Layout .logo {
   max-width: 60px;
-
+margin-left: 50px;
 }
 
 .Layout h1 span {
   flex-direction: column;
 
+}
+.Layout header .right{
+  display: flex;
+  align-items: center;
 }
