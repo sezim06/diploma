@@ -12,7 +12,14 @@ export default function Contact(){
     <p>Call us at +996 (500) 978-933.</p>
     
     <h2>Address:</h2>
-    <p>Visit us at 123 Main St, Anytown USA.</p>
+    <p>
+              Address:{" "}
+              <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_pushkina_10/Z04YdAFhSkQPQFtvfXpydHplZA==/?ll=37.261318%2C55.635660&z=16">
+                {" "}
+                st. Pushkina, 10, Moscow
+              </a>
+            </p>
+   
   </div>
   )
 }
