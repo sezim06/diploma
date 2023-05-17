@@ -1,4 +1,4 @@
-.AddToCart .AddToCart {
+/* .AddToCart .AddToCart {
   padding: 10px 15px;
   border: white;
   border-radius: 12px;
@@ -21,4 +21,31 @@
 .AddToCart .AddToCart:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+} */
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #5d799896;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.animated-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s;
+}
+
+.animated-button:hover:after {
+  left: 0;
 }
