@@ -12,6 +12,8 @@ export default function Books(){
     
     <h2>Toni Morrison</h2>
     <p>Toni Morrison (1931-2019) was an American novelist, essayist, and professor. She was known for her powerful and poetic writing that explored themes of race, gender, and identity. Some of her most famous works include "Beloved," "The Bluest Eye," and "Song of Solomon."</p>
+    
   </div>
+
   )
 }
