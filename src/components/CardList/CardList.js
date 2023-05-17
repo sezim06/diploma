@@ -37,7 +37,9 @@ export default function CardList() {
 
         <span>US${(cart[product.id] * product.price).toFixed(2)}</span>
 
-        <button onClick={() => onItemRemove(product)}>Remove</button>
+        <button onClick={() => onItemRemove(product)}>
+          remove
+        </button>
       </div>
     ));
   return <div className="CardList">{output}</div>;
