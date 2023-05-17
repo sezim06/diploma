@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { productsCollection, uploadProductPhoto } from "../../firebase";
 import { addDoc } from "firebase/firestore";
-
+import "./AddProduct.css"
 export default function AddProduct({ category }) {
   const { user } = useContext(AppContext);
   const [name, setName] = useState("");
@@ -59,7 +59,7 @@ export default function AddProduct({ category }) {
 
   return (
     <div className="AddProduct">
-      <form onSubmit={onFormSubmit}>
+      <form onSubmit={onFormSubmit} className="Form">
         <h3>Create a new product</h3>
         <label>
           Name:
