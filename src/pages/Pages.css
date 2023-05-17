@@ -66,6 +66,8 @@ transition: 1s;
 
 /* FOOTER */
 
+
+
 footer {
   background:rgba(128, 128, 128, 0.295);
   border: 1px solid grey;
@@ -106,8 +108,7 @@ h4 {
   padding: 0px 20px;
 }
 .col-md-4  span{
-  color: #014b65;
-}
+  color: #0f539b;}
 
 .col-md-4:last-child {
   margin-right: 0;
@@ -157,6 +158,7 @@ button[type="submit"] {
 }
 
 /* BOOKS PAGES */
+
 
 .Books {
   max-width: 800px;
@@ -235,7 +237,7 @@ button[type="submit"] {
 }
 
 .Contacts a {
-  color: #007bff;
+  color: #0f539b;
 }
 
 @media (max-width: 600px) {
