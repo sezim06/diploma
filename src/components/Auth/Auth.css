@@ -4,6 +4,7 @@
   padding: 5px 30px;
   border: #d9d9d9;
   border-radius: 10px;
+  cursor: pointer;
 
 }
 .Auth button:hover {
