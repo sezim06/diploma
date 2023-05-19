@@ -25,7 +25,7 @@ export default function ProductsList({ category }) {
 
   return (
     <div className="ProductsList">
-      {output} <AddProduct  category={category}/>
+      {output} <AddProduct category={category} />
     </div>
   );
 }
