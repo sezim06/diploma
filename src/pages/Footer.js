@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pages.css";
+import youtube  from "./youtube.png"
 
 function Footer() {
   return (
@@ -64,7 +65,7 @@ function Footer() {
           </svg>
         </a>
        </div>
-      
+      <img src={youtube}/>
       </div>
     </footer>
   );
