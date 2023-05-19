@@ -2,3 +2,6 @@
   flex-direction: column;
   
 }
+.AddProduct button{
+  border-radius: 15px;
+}

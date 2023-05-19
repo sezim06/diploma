@@ -91,7 +91,7 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <button type="submit" disabled={isSubmitting}>
+        <button className="animated-button"  type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
