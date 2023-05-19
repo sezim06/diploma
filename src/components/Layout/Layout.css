@@ -29,11 +29,13 @@
 
 .Layout aside {
   grid-area: aside;
+  margin:50px 0;
 }
 
 .Layout main {
   grid-area: main;
   padding: 30px 50px;
+  margin-top: 22px;
 }
 
 .Layout footer {
