@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
+import Search from "../Search/Search";
 export default function Nav(){
   return (
 <div className="Nav">
 <nav className="main-nav">
       <ul>
+        <Search/>
         <li className="NavItem">
           <NavLink className="active" to="/">Home</NavLink>
         </li>

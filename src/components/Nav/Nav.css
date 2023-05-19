@@ -27,7 +27,7 @@
 .Nav {
   display: inline-flex;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: transparent;
   padding: 0 20px;
   border-radius: 40px;
@@ -54,15 +54,19 @@
 
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(159, 15, 101);
 
 }
 .Nav ul li a:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+   color: rgb(154, 16, 99);
+
 }
 .Nav ul li a:focus{
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: rgb(156, 7, 97);
 }
 .Nav .main-nav {
  margin: 0 60px;
@@ -78,8 +82,11 @@
   }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1211px) {
   .Nav {
     display: none;
   }
+}
+.Nav ul {
+  display: flex;
 }
