@@ -47,7 +47,7 @@ export default function OrderForm() {
       <label>
         Address: <input type="text" name="address" required />
       </label>
-      <button><span>Submit</span></button>
+      <button className="animated-button"><span>Submit</span></button>
     </form>
   );
 }
