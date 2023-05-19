@@ -65,7 +65,7 @@ function Footer() {
           </svg>
         </a>
        </div>
-      <img src={youtube}/>
+      <img src={youtube} alt="youtube"/>
       </div>
     </footer>
   );
