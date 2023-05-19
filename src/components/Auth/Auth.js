@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
-import "./Auth.css"
+import "./Auth.css";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -11,21 +11,23 @@ export default function Auth() {
     <div className="Auth">
       {user ? (
         <div className="Auth-log-out">
+         
           <div>
-            Hello <Link to="/orders">{user.displayName}</Link>!
+            <button className="animated-button" onClick={logOut}>
+              Sign out
+            </button>
           </div>
           <div>
-            <button onClick={logOut}>Sign out</button>
+            <img className="photo" src={user.photoURL} alt="email" />{" "}
           </div>
         </div>
       ) : (
-        
         <div className="Auth-log-in">
+          <div>Hello guest!</div>
           <div>
-            Hello guest!
-          </div>
-          <div>
-            <button onClick={logIn}>Sign in</button>
+            <button className="animated-button" onClick={logIn}>
+              Sign in
+            </button>
           </div>
         </div>
       )}

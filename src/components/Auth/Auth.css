@@ -1,5 +1,4 @@
 .Auth button {
-  background-color: rgb(175, 8, 108);
   color: #fff;
   padding: 5px 30px;
   border: #d9d9d9;
@@ -7,9 +6,11 @@
   cursor: pointer;
 
 }
-.Auth button:hover {
-  transition: .4s ease-in-out;
-  background: rgb(188, 88, 148);
+.Auth .photo{
+  width: 50px;
+  border-radius: 65px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .Auth span {
@@ -23,4 +24,11 @@
   
   color: rgb(145, 4, 88);
   font-family: 'Manrope', sans-serif;
+}
+.Auth .Auth-log-out{
+  display: flex;
+  align-items: center;
+}
+.Auth .Auth-log-out img {
+  margin-left: 10px;
 }
