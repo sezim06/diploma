@@ -6,7 +6,7 @@ import Drawer from "../Drawer/Drawer";
 import Nav from "../Nav/Nav";
 import NavToggle from "../NavToggle/NavToggle";
 import "./Layout.css";
-import Footer from "../../pages/Footer";
+import Footer from "../Footer/Footer";
 import Logo from "../ui/Logo/Logo";
 
 export default function Layout(props) {
