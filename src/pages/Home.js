@@ -1,7 +1,6 @@
 import "./Pages.css";
 // import video from "../assets/video.mp4";
 
-
 export default function Home() {
   return (
     <div className="Home">
@@ -37,7 +36,7 @@ export default function Home() {
           <li>Pride and Prejudice by Jane Austen</li>
         </ul>
       </div>
-     
+   
       {/* <video widt5="400" height="300" controls>
           <source src={video} type="video/mp4" />
         </video> */}
