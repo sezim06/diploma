@@ -7,7 +7,7 @@ export default function Logo() {
     <div className="Logo">
       <Link href="https://youtu.be/IaXjbgH3cZY">
        
-          <img src={llogo} alt="logo" className="logo" href="Home.js" /> 
+          <img src={llogo} alt="logo" className="logo"/> 
        
         
         
