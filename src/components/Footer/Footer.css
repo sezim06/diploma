@@ -80,7 +80,7 @@ button[type="submit"] {
 .Footer .bottom-bar .link .icon {
   margin: 0 30px;
 }
- .main-nav ul {
+.Main-nav ul {
   margin-top: 50px;
   border-top: 1px solid black;
   padding: 30px;
@@ -88,6 +88,6 @@ button[type="submit"] {
   justify-content: space-between;
  
 }
-.main-nav{
+.Footer.Main-nav{
   color: #000;
 }
