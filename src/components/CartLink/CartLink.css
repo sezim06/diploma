@@ -31,7 +31,6 @@ body {
 	background-color: var(--bg);
 	color: var(--fg);
 	font: 1em/1.5 "DM Sans", sans-serif;
-	height: 100vh;
 	display: grid;
 	place-items: center;
 	transition:
@@ -148,4 +147,7 @@ body {
 	50% {
 		stroke-dashoffset: 40.84;
 	}
+}
+.CartLink h1{
+	color: #000;
 }
