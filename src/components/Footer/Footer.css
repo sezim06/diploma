@@ -77,8 +77,8 @@ button[type="submit"] {
   margin: 0;
 }
 
-.Footer .bottom-bar .link .icon {
-  margin: 0 30px;
+.Footer .link a{
+  align-items: center;
 }
 .Main-nav ul {
   margin-top: 50px;

@@ -12,7 +12,7 @@ function Footer() {
           <div className="col-md-4">
             <h4>About</h4>
             <p>
-              Our bookshrefre offers a wide range of books for every taste and
+              Our bookstore offers a wide range of books for every taste and
               preference. We proudly present books from the best authors and
               publishers.
             </p>
@@ -22,66 +22,66 @@ function Footer() {
             <h4>Contacts</h4>
             <p>
               Address:{" "}
-              <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_pushkina_10/Z04YdAFhSkQPQFtvfXpydHplZA==/?ll=37.261318%2C55.635660&z=16">
+              <a to="https://yandex.ru/maps/213/moscow/house/ulitsa_pushkina_10/Z04YdAFhSkQPQFtvfXpydHplZA==/?ll=37.261318%2C55.635660&z=16">
                 {" "}
                 st. Pushkina, 10, Moscow
               </a>
             </p>
 
             <div itemscope itemtype="https://schema.org/LocalBusiness">
-              <p itemprop="name">Bookshrefre</p>
+              <p itemprop="name">Bookstore</p>
               Phone:{" "}
               <span itemprop="telephone">
-                <a href="tel:+996500978933">0500978933</a>
+                <a to="tel:+996500978933">0500978933</a>
               </span>
             </div>
             <p>
               Email:{" "}
-              <a href="https://mail.google.com/mail/u/0/#inbo">
-                info@bookshrefre.ru
+              <a to="https://mail.google.com/mail/u/0/#inbo">
+                info@bookstore.ru
               </a>
             </p>
           </div>
           <div className="col-md-4">
-            <h4>Subscribe href news</h4>
+            <h4>Subscribe to news</h4>
             <p>
-              Subscribe href our newsletter and promotions href be the first href
+              Subscribe to our newsletter and promotions to be the first to
               receive the best offers and novelties of the book world.
             </p>
             <form>
               <input type="email" placeholder="Введите ваш e-mail" />
-              <buthrefn type="submit">Subscribe</buthrefn>
+              <button type="submit">Subscribe</button>
             </form>
           </div>
         </div>
-        <div >
+        <div>
           <nav className="Main-nav">
             <ul>
               <li className="NavItem">
-                <a className="active" href="/">
+                <a className="active" to="/">
                   Home
                 </a>
               </li>
               <li className="NavItem">
-                <a href="/books">Books</a>
+                <a to="/books">Books</a>
               </li>
               <li className="NavItem">
-                <a href="/contact">Contact</a>
+                <a to="/contact">Contact</a>
               </li>
               <li className="NavItem">
-                <a href="/delivery">Delivery</a>
+                <a to="/delivery">Delivery</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div className="bothrefm-bar">
-        <p>© 2023 Bookshrefre. All rights reserved.</p>
+      <div className="bottom-bar">
+        <p>© 2023 Bookstore. All rights reserved.</p>
         <div className="link">
           <a
             className="icon"
-            target="_hrefp"
-            href="https://twitter.com/sezimalias16432"
+            target="_top"
+            to="https://twitter.com/sezimalias16432"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ function Footer() {
             </svg>
           </a>
 
-          <a className="icon" href="https://youtu.be/W8D35i718Cs">
+          <a className="icon" to="https://youtu.be/W8D35i718Cs">
             <img src={youtube} alt="youtube" />
           </a>
           <a
