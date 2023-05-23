@@ -37,7 +37,10 @@ export default function CardList() {
 
         <span>US${(cart[product.id] * product.price).toFixed(2)}</span>
 
-        <button className="animated-button" onClick={() => onItemRemove(product)}>
+        <button
+          className="animated-button"
+          onClick={() => onItemRemove(product)}
+        >
           remove
         </button>
       </div>
