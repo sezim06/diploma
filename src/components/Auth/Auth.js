@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
-import "./Auth.css";
+import "./Auth.css"
+import { NavLink } from "react-router-dom";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -9,26 +10,35 @@ export default function Auth() {
   return (
     <div className="Auth">
       {user ? (
-        <div className="Auth-log-out">
-         
-          <div>
-            <button className="animated-button" onClick={logOut}>
-              Sign out
-            </button>
+        <span>
+          <div className="img-container">
+            <img
+              src={
+                user?.photoURL
+              }
+              alt="Placeholder"
+            />
+            <div className="img-menu">
+              <NavLink to="/orders">Your Profile</NavLink>
+              <button onClick={logOut}>Sign out</button>
+            </div>
           </div>
-          <div>
-            <img className="photo" src={user.photoURL} alt="email" />{" "}
-          </div>
-        </div>
+        </span>
       ) : (
-        <div className="Auth-log-in">
-          <div>Hello guest!</div>
-          <div>
-            <button className="animated-button" onClick={logIn}>
-              Sign in
-            </button>
+        <span className="LogOut-img">
+          <div className="img-container">
+            <img
+              src={
+                user?.photoURL ||
+                "https://icon-library.com/images/my-profile-icon-png/my-profile-icon-png-3.jpg"
+              }
+              alt="Placeholder"
+            />
+            <div className="img-menu">
+              <button onClick={logIn}>Sign in</button>
+            </div>
           </div>
-        </div>
+        </span>
       )}
     </div>
   );
