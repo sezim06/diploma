@@ -56,7 +56,8 @@ export default function Home() {
     'https://i.pinimg.com/564x/fa/10/d7/fa10d7d0f9497985caf610e37cef9cad.jpg',
     'https://i.pinimg.com/564x/d3/32/04/d3320482fe80b45d530392a9f1d72532.jpg',
     'https://i.pinimg.com/564x/81/5f/ef/815fef5d95ef3e44a268e6bf11b3d992.jpg',
-    'https://i.pinimg.com/564x/f2/34/f5/f234f5766cbe5203b95847c2332f52c2.jpg', // Replace this URL with the URL of the next image
+    'https://i.pinimg.com/564x/f2/34/f5/f234f5766cbe5203b95847c2332f52c2.jpg',
+    'https://i.pinimg.com/564x/82/9a/3f/829a3f1bbf624a8dfabc039760d8b367.jpg', // Replace this URL with the URL of the next image
     // Add other image URLs as needed
   ];
 
