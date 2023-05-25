@@ -91,3 +91,7 @@ button[type="submit"] {
 .Footer.Main-nav{
   color: #000;
 }
+
+.link .icon{
+  padding: 20px;
+}
