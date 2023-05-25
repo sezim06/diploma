@@ -152,3 +152,6 @@ body {
 .CartLink h1{
 	color: #000;
 }
+	.NavLink .cartpng{
+		margin: 10px;
+	}

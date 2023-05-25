@@ -10,7 +10,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-    <img src={cartt} alt="cart" width={30} />
+    <img className="cartpng" src={cartt} alt="cart" width={30} />
        
         {total}
       </NavLink>
