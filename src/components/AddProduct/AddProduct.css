@@ -1,7 +1,13 @@
 .AddProduct .Form {
   flex-direction: column;
+  padding: 25px 8px 0px 25px ;
   
 }
 .AddProduct button{
   border-radius: 15px;
+}
+.AddProduct{
+  background-color: rgba(130, 126, 126, 0.436);
+  border-radius: 15px;
+
 }
