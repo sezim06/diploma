@@ -80,10 +80,7 @@
     flex-direction: column;
     margin: 1rem 0;
   }
-}
-
-@media (max-width: 1211px) {
-  .Nav {
+  .Nav .Search {
     display: none;
   }
 }
