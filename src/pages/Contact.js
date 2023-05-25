@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./Pages.css"
 export default function Contact(){
   return(
@@ -9,7 +10,10 @@ export default function Contact(){
     <p>Email us at <a href="https://mail.google.com/mail/u/0/#inbox">mail.google.com/Aliaskarova-Sezim/BookStore</a>.</p>
     
     <h2>Phone:</h2>
-    <p>Call us at +996 (500) 978-933.</p>
+      <NavLink  to="https://wa.me/+996500978933">
+        <p> +996 (500) 978-933.</p>
+      </NavLink>
+    
     
     <h2>Address:</h2>
     <p>
