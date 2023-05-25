@@ -8,7 +8,8 @@
 .Layout {
   display: grid;
   grid-template-areas: "header header"
-    "aside main"
+    "main main"
+    "aside aside"
     "footer footer";
   grid-template-columns: 1fr 3fr;
   max-width: 150%;
@@ -16,6 +17,14 @@
   font-family: 'Alkatra', cursive;
   position: relative;
   z-index: 1;
+  
+}
+.Layout a{
+  color: black;
+}
+.Layout a:hover{
+ color: rgb(90, 88, 88);
+  
 }
 
 .Layout header {
@@ -56,4 +65,10 @@ margin-left: 50px;
 .Layout header .right{
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  .Layout header > .Nav {
+    display: none;
+  }
 }
