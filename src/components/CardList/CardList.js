@@ -29,6 +29,7 @@ export default function CardList() {
         <Link to={"/product/" + product.slug}>{product.name}</Link>
 
         <input
+        className="number-input"
           type="number"
           value={cart[product.id]}
           min={1}
