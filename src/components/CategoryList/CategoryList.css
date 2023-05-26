@@ -82,10 +82,7 @@
   color: rgb(143, 12, 91);
   font-size: 35px;
 }
-.CategoryList h3{
-align-items: center;
-width: 200%;
-}
+
 
 .CategoryList .icon {
   max-width: 50px;
@@ -95,9 +92,7 @@ width: 200%;
   align-items: center;
   display: flex;
 }
-.CategoryList ul{
-  display: flex;
-}
+  
 
 
 .CategoryList ul li div a:focus {

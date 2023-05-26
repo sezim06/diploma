@@ -35,7 +35,7 @@ export default function Auth() {
               alt="Placeholder"
             />
             <div className="img-menu">
-              <button onClick={logIn}>Sign in</button>
+              <button className="Login" onClick={logIn}>Sign in</button>
             </div>
           </div>
         </span>

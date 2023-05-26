@@ -8,11 +8,11 @@
 .Layout {
   display: grid;
   grid-template-areas: "header header"
-    "main main"
-    "aside aside"
+    "aside main"
+    "aside main"
     "footer footer";
   grid-template-columns: 1fr 3fr;
-  max-width: 150%;
+  max-width: 160%;
   margin: 50px;
   font-family: 'Alkatra', cursive;
   position: relative;

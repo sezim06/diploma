@@ -32,9 +32,9 @@ button {
   border-radius: 5px;
   top: 100%;
   left: -30px;
-  background-color: #666666;
+  background-color: #6666666b;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(113, 110, 110);
   transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
 }
 
@@ -56,6 +56,7 @@ button {
   text-decoration: none;
   display: flex;
 }
+
 
 .img-container:hover .img-menu {
   opacity: 1;
