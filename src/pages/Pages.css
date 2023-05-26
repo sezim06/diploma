@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;  
+  justify-content: flex-start;  
   height: 63vh;
 background-color: #9f959527;
   background-repeat: no-repeat;
