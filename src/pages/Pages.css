@@ -3,7 +3,7 @@
 .Home {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;  
   height: 63vh;
 background-color: #9f959527;
