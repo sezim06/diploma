@@ -1,5 +1,5 @@
 import "./Pages.css";
-import video from "../assets/video.mp4";
+// import video from "../assets/video.mp4";
 
 export default function Home() {
   return (
@@ -37,11 +37,11 @@ export default function Home() {
         </ul>
        
       </div>
-      <div className="video">
+      {/* <div className="video">
         <video width="400" height="350" controls>
           <source src={video} type="video/mp4" />
         </video>
-      </div>
+      </div> */}
     </div>
   );
 }
